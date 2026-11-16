@@ -1,15 +1,19 @@
 # Microservices
 
-A Java 17 and Spring Boot project structured as a Maven multi-module build. The current module is `customer`, a REST service for registering customers with PostgreSQL.
+A Java 17 and Spring Boot project structured as a Maven multi-module build. It currently contains two services: `customer` (REST service for registering customers) and `fraud` (fraud detection service), both using PostgreSQL.
 
 ## Project structure
 
 ```text
 .
-├── customer/                 # Customer service
+├── customer/                 # Customer registration service
 │   └── src/main/
 │       ├── java/hamdy/       # Application, API, service, and persistence code
 │       └── resources/        # Spring configuration and startup banner
+├── fraud/                    # Fraud detection service
+│   └── src/main/
+│       ├── java/hamdy/       # Application, API, service, and persistence code
+│       └── resources/        # Spring configuration
 ├── docker-compose.yaml       # PostgreSQL and pgAdmin for local development
 └── pom.xml                   # Parent Maven project
 ```
