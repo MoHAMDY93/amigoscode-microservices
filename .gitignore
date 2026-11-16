@@ -22,3 +22,6 @@ target/
 # Operating system files
 .DS_Store
 Thumbs.db
+
+# DB local volume
+postgres-data
