@@ -1,4 +1,4 @@
 package hamdy;
 
-public class FraudCheckResponse {
+public record FraudCheckResponse(Boolean isFraudster) {
 }
